@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzeria Pappagallo | Stezzano (BG) - Pizza al Forno a Legna</title>
+  <meta name="description" content="Pizzeria Pappagallo - Pizzeria e Kebab d'asporto a Stezzano. Pizza cotta nel forno a legna, kebab, focacce, panini e tanto altro. Consegna a domicilio gratuita.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-flame"></div>
+      <span class="preloader-text">Pappagallo</span>
+    </div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-icon">🦜</span>
+        <span class="nav-logo-text">Pappagallo</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#chi-siamo" class="nav-link">Chi Siamo</a>
+        <a href="#offerte" class="nav-link">Offerte</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#contatti" class="nav-link">Contatti</a>
+        <a href="tel:035593083" class="nav-cta">Ordina Ora</a>
+      </div>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-inner">
+      <a href="#chi-siamo" class="mobile-link">Chi Siamo</a>
+      <a href="#offerte" class="mobile-link">Offerte</a>
+      <a href="#menu" class="mobile-link">Menu</a>
+      <a href="#contatti" class="mobile-link">Contatti</a>
+      <a href="tel:035593083" class="mobile-cta">Ordina Ora</a>
+      <div class="mobile-socials">
+        <a href="https://www.instagram.com/pizzeria_pappagallo_stezzano?utm_source=qr&igsh=M2NvbzQweTRyazZ4" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+        </a>
+        <a href="https://www.tiktok.com/@pappagallo.stezzano?_r=1&_t=ZN-960Hrs231f9" target="_blank" rel="noopener" aria-label="TikTok">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.89a8.28 8.28 0 004.76 1.5V6.94a4.85 4.85 0 01-1-.25z"/></svg>
+        </a>
+        <a href="https://www.facebook.com/share/1bpByEbiT8/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <div class="hero-bg-gradient"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <div class="hero-grid-pattern"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Forno a Legna dal 2005</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line"><span class="title-word">Pizzeria</span></span>
+        <span class="title-line"><span class="title-word accent">Pappagallo</span></span>
+      </h1>
+      <p class="hero-subtitle">Pizzeria e Kebab d'Asporto &mdash; Stezzano (BG)</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary">
+          <span>Scopri il Menu</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="tel:035593083" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>Chiama</span>
+        </a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>Scorri</span>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number" data-count="80">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Pizze</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+        <span class="stat-label">Anni</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-icon">🔥</span>
+        <span class="stat-label">Forno a Legna</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHI SIAMO -->
+  <section id="chi-siamo" class="section">
+    <div class="container">
+      <div class="section-grid about-grid">
+        <div class="about-content">
+          <span class="section-tag">// chi siamo</span>
+          <h2 class="section-title">L'Arte della Pizza <br><span class="accent">dal Forno a Legna</span></h2>
+          <p class="about-text">
+            Da oltre vent'anni, Pizzeria Pappagallo porta a Stezzano il gusto autentico della pizza italiana,
+            cotta nel <strong>forno a legna</strong> con ingredienti di prima qualit&agrave;.
+            Dalla classica Margherita alle nostre creazioni speciali, ogni pizza racconta una storia di passione e tradizione.
+          </p>
+          <p class="about-text">
+            Oltre alle nostre <strong>80+ variet&agrave; di pizza</strong>, offriamo kebab, focacce, panini, piadine,
+            panzerotti, fritture e i nuovissimi tacos. Tutto preparato con cura e consegnato
+            <strong>gratuitamente a domicilio</strong>.
+          </p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">🌾</div>
+              <div>
+                <strong>Farine Speciali</strong>
+                <span>Integrale, 7 Cereali, Kamut, Senza Glutine</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🧀</div>
+              <div>
+                <strong>Ingredienti DOP</strong>
+                <span>Bufala Campana, Grana Padano, Zola DOP</span>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🚗</div>
+              <div>
+                <strong>Consegna Gratuita</strong>
+                <span>A domicilio &mdash; anche su JustEat</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-card">
+            <div class="visual-flame">🔥</div>
+            <div class="visual-big-number">80<span>+</span></div>
+            <div class="visual-label">Variet&agrave; di Pizza</div>
+            <div class="visual-divider"></div>
+            <div class="visual-details">
+              <div class="visual-detail"><span>🍕</span> Forno a Legna</div>
+              <div class="visual-detail"><span>🛵</span> Consegna Gratuita</div>
+              <div class="visual-detail"><span>🌿</span> Ingredienti DOP</div>
+            </div>
+          </div>
+          <div class="about-parrot">🦜</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERTE -->
+  <section id="offerte" class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">// offerte speciali</span>
+        <h2 class="section-title">Le Nostre <span class="accent">Offerte</span></h2>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card offer-highlight">
+          <div class="offer-badge">OGNI GIORNO</div>
+          <div class="offer-emoji">🍕</div>
+          <h3 class="offer-title">Promo Fedelt&agrave;</h3>
+          <p class="offer-desc">Ogni <strong>10 pizze</strong> acquistate, ricevi in omaggio una</p>
+          <span class="offer-value">Pizza Margherita GRATIS</span>
+        </div>
+        <div class="offer-card">
+          <div class="offer-badge">MARTED&Igrave;</div>
+          <div class="offer-emoji">🔥</div>
+          <h3 class="offer-title">Marted&igrave; Pazzo</h3>
+          <p class="offer-desc">Tutti i marted&igrave;, <strong>tutte le pizze</strong> del menu a soli</p>
+          <span class="offer-price">&euro; 5,00</span>
+        </div>
+        <div class="offer-card">
+          <div class="offer-badge">PRANZO</div>
+          <div class="offer-emoji">☀️</div>
+          <h3 class="offer-title">Pausa Pranzo</h3>
+          <p class="offer-desc">A mezzogiorno, <strong>tutte le pizze + bibita</strong> inclusa a soli</p>
+          <span class="offer-price">&euro; 6,00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>MARGHERITA</span><span class="marquee-dot">&#9679;</span>
+        <span>FANTASIA</span><span class="marquee-dot">&#9679;</span>
+        <span>PAPPAGALLO</span><span class="marquee-dot">&#9679;</span>
+        <span>TARTUFONA</span><span class="marquee-dot">&#9679;</span>
+        <span>VALTELLINA</span><span class="marquee-dot">&#9679;</span>
+        <span>CAPRICCIOSA</span><span class="marquee-dot">&#9679;</span>
+        <span>CALZONE</span><span class="marquee-dot">&#9679;</span>
+        <span>KEBAB</span><span class="marquee-dot">&#9679;</span>
+        <span>FOCACCIA</span><span class="marquee-dot">&#9679;</span>
+        <span>TACOS</span><span class="marquee-dot">&#9679;</span>
+        <span>MARGHERITA</span><span class="marquee-dot">&#9679;</span>
+        <span>FANTASIA</span><span class="marquee-dot">&#9679;</span>
+        <span>PAPPAGALLO</span><span class="marquee-dot">&#9679;</span>
+        <span>TARTUFONA</span><span class="marquee-dot">&#9679;</span>
+        <span>VALTELLINA</span><span class="marquee-dot">&#9679;</span>
+        <span>CAPRICCIOSA</span><span class="marquee-dot">&#9679;</span>
+        <span>CALZONE</span><span class="marquee-dot">&#9679;</span>
+        <span>KEBAB</span><span class="marquee-dot">&#9679;</span>
+        <span>FOCACCIA</span><span class="marquee-dot">&#9679;</span>
+        <span>TACOS</span><span class="marquee-dot">&#9679;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">// il nostro menu</span>
+        <h2 class="section-title">Il Menu <span class="accent">Completo</span></h2>
+        <p class="section-desc">Oltre 80 variet&agrave; di pizza, tutte cotte nel forno a legna</p>
+      </div>
+
+      <!-- MENU SEARCH -->
+      <div class="menu-search-wrapper">
+        <div class="menu-search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="menu-search" placeholder="Cerca una pizza..." autocomplete="off">
+        </div>
+      </div>
+
+      <!-- MENU TABS -->
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-tab="pizze">Pizze</button>
+        <button class="menu-tab" data-tab="kebab-pizza">Pizze Kebab</button>
+        <button class="menu-tab" data-tab="famiglia">Famiglia</button>
+        <button class="menu-tab" data-tab="focacce">Focacce</button>
+        <button class="menu-tab" data-tab="panini">Panini</button>
+        <button class="menu-tab" data-tab="kebab">Kebab & Piadine</button>
+        <button class="menu-tab" data-tab="fritture">Fritture</button>
+        <button class="menu-tab" data-tab="tacos">Tacos</button>
+        <button class="menu-tab" data-tab="bibite">Bibite</button>
+      </div>
+
+      <!-- FARINE SPECIALI NOTICE -->
+      <div class="menu-notice">
+        <span class="notice-icon">🌾</span>
+        <p>Disponibili farine speciali: <strong>Integrale</strong> (+&euro;1), <strong>7 Cereali</strong> (+&euro;1), <strong>Kamut</strong> (+&euro;1), <strong>Senza Glutine</strong> (+&euro;1,50) &mdash; <strong>Mozzarella senza lattosio</strong> disponibile</p>
+      </div>
+
+      <!-- PIZZE CLASSICHE -->
+      <div class="menu-panel active" data-panel="pizze">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Atalanta</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, gorgonzola DOP, porcini</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Babbo Natale</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, bufala campana DOP, carciofi, rucola, pomodorini</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Bergamasca</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, zola DOP, pancetta croccante</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Bianca Rosa</h4><span class="item-price">&euro; 7,00</span></div><p>Mozzarella, gamberetti freschi, salmone</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Bismark</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, asparagi, uovo sbattuto</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Brie &amp; Speck</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, brie, speck Alto Adige</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Bufala</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella di bufala campana DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Calabrese</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, 'nduja, peperoncino</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Calamari</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, calamari</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Calzone dell'Amore</h4><span class="item-price">&euro; 7,00</span></div><p>Calzone ripieno speciale</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Calzone Farcito</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, funghi champignon, prosciutto</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Calzone Gustoso</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, farcito con ingredienti misti</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Calzone Liscio</h4><span class="item-price">&euro; 6,50</span></div><p>Calzone classico con pomodoro e mozzarella</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Capricciosa</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, carciofi, funghi, prosciutto cotto</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Carbonara</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, pancetta, uovo</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Cime di Rapa</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, cime di rapa, salsiccia fresca</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Cleopatra</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, salsiccia fresca</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Contadina</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, salsiccia, peperoni, cipolla</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Crudo</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, crudo di Parma 18 mesi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Delizia</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, prosciutto, zola DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Diavola</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, salame piccante</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Egipt</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, prosciutto, brie, panna</p></div>
+          <div class="menu-item"><div class="item-header"><h4>El Karnak</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, bufala campana DOP, porcini, speck</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Estate</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, pomodoro fresco, rucola</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Falafel</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, falafel</p></div>
+          <div class="menu-item featured"><div class="item-header"><h4>Fantasia <span class="item-badge">SPECIALE</span></h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, prosciutto crudo, speck, grana</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Frutti di Mare</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, frutti di mare</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Gamberetti</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, gamberetti freschi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Gennaro</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, taleggio DOP, cipolla</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Genovese</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, pesto genovese, patata lessa</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Giulia</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, burrata, carciofi, zucchine, scorza di limone</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Gorgonzola</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, zola DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Habibi</h4><span class="item-price">&euro; 6,50</span></div><p>Doppio pomodoro, bufala campana DOP, prosciutto</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Il Nilo</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, scamorza affumicata DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Italiana</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, basilico, pomodoro fresco</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Lisa</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, crudo, burrata</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Luca Albi</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, bufala campana DOP, prosciutto cotto</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mangia Fuoco</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, salame piccante, peperoncino</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mare Monti</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, porcini, frutti di mare</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mare Rosso</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, porcini, frutti di mare</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Margherita</h4><span class="item-price">&euro; 5,50</span></div><p>Pomodoro, mozzarella</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mariem</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, gamberetti freschi, rucola</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Marinara</h4><span class="item-price">&euro; 5,00</span></div><p>Pomodoro, aglio, origano</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mexicana</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, funghi champignon, peperoncino</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Moro</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, pancetta, pecorino, pomodorini</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mortadella</h4><span class="item-price">&euro; 7,00</span></div><p>Mozzarella, mortadella, stracciatella</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Nefertiti</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, peperoni grigliati</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Nicola</h4><span class="item-price">&euro; 7,00</span></div><p>Mozzarella, melanzane fritte, patatine fritte</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Nozza</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, speck, porcini, grana, brie</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Occhio di Bue</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, uovo, prosciutto cotto</p></div>
+          <div class="menu-item featured"><div class="item-header"><h4>Pappagallo <span class="item-badge">LA NOSTRA</span></h4><span class="item-price">&euro; 7,00</span></div><p>La specialit&agrave; della casa</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Parmigiana</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, melanzane, parmigiano</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Polenta</h4><span class="item-price">&euro; 6,50</span></div><p>Polenta bergamasca con salsiccia e funghi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Prosciutto</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, prosciutto cotto</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Prosciutto e Funghi</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, prosciutto, funghi porcini</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Pugliese</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, cipolla, olive</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Quattro Formaggi</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, gorgonzola, taleggio, grana</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Quattro Salumi</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, quattro salumi misti</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Quattro Stagioni</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, carciofi, funghi, prosciutto, olive</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Ramses</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, funghi champignon</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Ricotta &amp; Spinaci</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, ricotta, spinaci</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Romana</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, acciughe, grana Padano DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Salame Dolce</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, salame dolce</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Salamino Piccante</h4><span class="item-price">&euro; 5,50</span></div><p>Pomodoro, mozzarella, salame piccante</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Salsiccia</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, salsiccia fresca</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Saporita</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella, burrata, crudo o speck</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Sfinge</h4><span class="item-price">&euro; 6,00</span></div><p>Mozzarella, taleggio DOP, porcini, grana Padano DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Sharm</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, pomodoro fresco, porcini, salame piccante</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Siciliana</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, origano, capperi, olive</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Simone</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, bresaola punta d'anca, pecorino, porcini, rucola</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Sorrentina</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, bufala campana DOP, pomodoro fresco, basilico, grana Padano</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tartufona</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, crema di tartufo, porcini, brie, speck</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Texana</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, pancetta bacon, branzi DOP, fagioli neri, cipolla rossa</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tirolese</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, funghi champignon, salsiccia fresca</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tonno &amp; Cipolle</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, tonno, cipolle rosse</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Trevisana</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, trevisana, pancetta arrotolata</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tricolore</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, zucchine julienne, brie, zafferano, speck Alto Adige</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Valtellina</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, bresaola punta d'anca, rucola, scaglie di grana Padano</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Veneto</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, trevisana, scamorza affumicata, salame piccante, cipolla rossa</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Verdure</h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, peperoni, zucchine, melanzane</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Vero Amore <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 6,50</span></div><p>Pomodoro, mozzarella, salame dolce, taleggio, cipolle</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Vulcano</h4><span class="item-price">&euro; 7,00</span></div><p>2 pastelle, mozzarella, salame piccante, funghi, uovo sbattuto, speck, grana Padano</p></div>
+          <div class="menu-item"><div class="item-header"><h4>W&uuml;rstel</h4><span class="item-price">&euro; 5,50</span></div><p>Pomodoro, mozzarella, w&uuml;rstel</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Zola Noci Pere o Mele</h4><span class="item-price">&euro; 5,50</span></div><p>Mozzarella, zola DOP, noci, pere o mele</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Zucca</h4><span class="item-price">&euro; 6,00</span></div><p>Pomodoro, mozzarella, crema di zucca, olive, zola DOP</p></div>
+        </div>
+      </div>
+
+      <!-- PIZZE KEBAB -->
+      <div class="menu-panel" data-panel="kebab-pizza">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Calzone Hasnaa</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, carne kebab, scamorza affumicata, salame piccante</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Sami</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, carne kebab, peperoni grigliati, olive</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Sara</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, kebab, cipolle, salsa yogurt, patatine</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Pizza Kebab</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, kebab, cipolla, insalata, pomodoro fresco, salsa yogurt, patatine</p></div>
+        </div>
+      </div>
+
+      <!-- PIZZE FAMIGLIA -->
+      <div class="menu-panel" data-panel="famiglia">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Margherita Famiglia</h4><span class="item-price">&euro; 14,00</span></div><p>La classica margherita in formato famiglia</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Farcita Famiglia</h4><span class="item-price">&euro; 17,00</span></div><p>Pizza famiglia farcita a scelta</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Kebab Famiglia</h4><span class="item-price">&euro; 17,00</span></div><p>Pizza famiglia con kebab</p></div>
+        </div>
+      </div>
+
+      <!-- FOCACCE -->
+      <div class="menu-panel" data-panel="focacce">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Focaccia</h4><span class="item-price">&euro; 3,00</span></div><p>Olio d'oliva, sale, origano</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Focaccia Primavera</h4><span class="item-price">&euro; 5,00</span></div><p>Bufala campana DOP, pomodori freschi, rucola, grana Padano DOP, farcitura a fine cottura</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Focaccia Salumi</h4><span class="item-price">&euro; 5,00</span></div><p>Focaccia liscia con salume a scelta, rucola, grana Padano DOP</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Focaccia Verdure</h4><span class="item-price">&euro; 5,00</span></div><p>Verdure grigliate miste, olive</p></div>
+        </div>
+      </div>
+
+      <!-- PANINI -->
+      <div class="menu-panel" data-panel="panini">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Panino 1</h4><span class="item-price">&euro; 4,50</span></div><p>Lattuga, pomodoro, bufala campana DOP, crudo di Parma 18 mesi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Panino 2</h4><span class="item-price">&euro; 4,50</span></div><p>Lattuga, pomodoro, tonno, olive, cipolla rossa, acciughe</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Panino 3</h4><span class="item-price">&euro; 4,50</span></div><p>Lattuga, pomodoro, bresaola, rucola, grana</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Panzerotto Nutella</h4><span class="item-price">&euro; 5,00</span></div><p>Panzerotto dolce ripieno di nutella</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Panzerotto Classico</h4><span class="item-price">&euro; 5,00</span></div><p>Prosciutto e mozzarella</p></div>
+        </div>
+      </div>
+
+      <!-- KEBAB & PIADINE -->
+      <div class="menu-panel" data-panel="kebab">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Piatto Kebab</h4><span class="item-price">&euro; 5,50</span></div><p>Carne di vitello, tacchino, insalata, patatine, pomodoro, salse, cipolle</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Panino Kebab</h4><span class="item-price">&euro; 5,00</span></div><p>Pane della pizza, carne di vitello, tacchino, insalata, patatine, pomodoro, salse</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Piadina Kebab</h4><span class="item-price">&euro; 5,50</span></div><p>Piadina, carne di vitello, tacchino, insalata, patatine, pomodoro, salse</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Maxi Panino Kebab</h4><span class="item-price">&euro; 6,50</span></div><p>Pane della pizza, porzione extra di carne, insalata, patatine, pomodoro, salse</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Piadina Mista</h4><span class="item-price">&euro; 5,00</span></div><p>Piadina, affettato a scelta, mozzarella, salsa rosa, insalata, pomodoro</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Hot Dog</h4><span class="item-price">&euro; 3,00</span></div><p>Hot dog con ketchup e maionese</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Hamburger</h4><span class="item-price">&euro; 5,00</span></div><p>Formaggio, pomodoro, insalata, ketchup, maionese</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Panino Falafel</h4><span class="item-price">&euro; 4,50</span></div><p>Pane della pizza, insalata, pomodoro, salsa rosa, falafel</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Piadina Falafel</h4><span class="item-price">&euro; 5,00</span></div><p>Falafel, insalata, cipolla, pomodoro, salsa rosa, salsa yogurt, salsa piccante</p></div>
+          <div class="menu-item highlight-card"><div class="item-header"><h4>Men&ugrave; Panino</h4><span class="item-price">&euro; 7,00</span></div><p>Panino Kebab + patatine fritte + bibita</p></div>
+          <div class="menu-item highlight-card"><div class="item-header"><h4>Men&ugrave; Piadina</h4><span class="item-price">&euro; 7,00</span></div><p>Piadina Kebab + patatine fritte + bibita</p></div>
+        </div>
+      </div>
+
+      <!-- FRITTURE -->
+      <div class="menu-panel" data-panel="fritture">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Chele di Granchio</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Mozzarelline</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Olive Ascolane</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Chicken Nuggets</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Anelli di Cipolla</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Crocchette</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
+          <div class="menu-item highlight-card"><div class="item-header"><h4>Fritto Misto</h4><span class="item-price">&euro; 7,00</span></div><p>Assortimento di fritture miste</p></div>
+        </div>
+      </div>
+
+      <!-- TACOS -->
+      <div class="menu-panel" data-panel="tacos">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Tacos Italiano <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 5,00</span></div><p>Prosciutto DOP, mozzarella, salsa a scelta &mdash; Men&ugrave; &euro;7,00</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tacos Kebab <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 6,00</span></div><p>Kebab, patatine, mozzarella, salsa a scelta &mdash; Men&ugrave; &euro;7,50</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tacos Americano <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 6,50</span></div><p>Stile americano con salsa a scelta</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Tacos Pollo <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 5,00</span></div><p>Pollo, salsa a scelta &mdash; Men&ugrave; &euro;7,00</p></div>
+        </div>
+      </div>
+
+      <!-- BIBITE -->
+      <div class="menu-panel" data-panel="bibite">
+        <div class="menu-grid">
+          <div class="menu-item"><div class="item-header"><h4>Lattina 33cl</h4><span class="item-price">&euro; 1,50</span></div><p>Coca-Cola, Fanta, Sprite e altre</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Bottiglia 1,5lt</h4><span class="item-price">&euro; 3,00</span></div><p>Bibite in bottiglia grande</p></div>
+          <div class="menu-item"><div class="item-header"><h4>Acqua 0,5lt</h4><span class="item-price">&euro; 1,00</span></div><p>Acqua naturale o frizzante</p></div>
+        </div>
+      </div>
+
+      <!-- NO RESULTS -->
+      <div class="menu-no-results" id="menu-no-results" style="display:none;">
+        <span class="no-results-icon">🔍</span>
+        <p>Nessun risultato per "<span id="search-query"></span>"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATTI -->
+  <section id="contatti" class="section section-dark">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">// dove trovarci</span>
+        <h2 class="section-title">Contatti &amp; <span class="accent">Orari</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Indirizzo</h3>
+          <p>Via Bergamo, 12</p>
+          <p><strong>Stezzano (BG)</strong></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Orari</h3>
+          <p>11:00 &ndash; 14:30</p>
+          <p>17:00 &ndash; 01:00</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>Telefono</h3>
+          <p><a href="tel:035593083">035 593083</a></p>
+          <p><a href="tel:0355904340">035 5904340</a></p>
+          <p><a href="tel:3397509480">339 7509480</a></p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Ordina</h3>
+          <p><a href="https://wa.me/393397509480">WhatsApp</a></p>
+          <p>JustEat</p>
+        </div>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-wrapper">
+        <iframe
+          src="https://www.google.com/maps?q=Via+Bergamo+12,+Stezzano+BG,+Italy&output=embed"
+          width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">🦜 Pappagallo</span>
+          <p>Pizzeria e Kebab d'Asporto<br>Forno a Legna &mdash; Stezzano (BG)</p>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/pizzeria_pappagallo_stezzano?utm_source=qr&igsh=M2NvbzQweTRyazZ4" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.tiktok.com/@pappagallo.stezzano?_r=1&_t=ZN-960Hrs231f9" target="_blank" rel="noopener" aria-label="TikTok" class="social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 00-.79-.05A6.34 6.34 0 003.15 15.2a6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.34-6.34V8.89a8.28 8.28 0 004.76 1.5V6.94a4.85 4.85 0 01-1-.25z"/></svg>
+            <span>TikTok</span>
+          </a>
+          <a href="https://www.facebook.com/share/1bpByEbiT8/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            <span>Facebook</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pizzeria Pappagallo &mdash; Via Bergamo, 12 &mdash; Stezzano (BG)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/393397509480" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

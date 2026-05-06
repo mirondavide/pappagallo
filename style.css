@@ -557,6 +557,37 @@ img {
   transform: translateY(-3px);
 }
 
+.hero-location {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 32px;
+  padding: 12px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.hero-location:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+.hero-location svg:first-child {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.hero-location svg:last-child {
+  opacity: 0.5;
+  flex-shrink: 0;
+}
+
 .hero-scroll {
   position: absolute;
   bottom: 120px;
@@ -580,59 +611,6 @@ img {
   text-transform: uppercase;
   letter-spacing: 2px;
   writing-mode: vertical-rl;
-}
-
-.hero-stats {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 24px 32px;
-  margin: 0 24px;
-  max-width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  backdrop-filter: blur(10px);
-}
-
-.stat {
-  display: flex;
-  align-items: baseline;
-  gap: 4px;
-  flex-wrap: wrap;
-}
-
-.stat-number {
-  font-family: var(--font-mono);
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--accent);
-}
-
-.stat-plus {
-  font-family: var(--font-mono);
-  font-size: 1.5rem;
-  color: var(--accent);
-}
-
-.stat-label {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-left: 4px;
-}
-
-.stat-icon {
-  font-size: 2rem;
-}
-
-.stat-divider {
-  width: 1px;
-  height: 40px;
-  background: var(--border);
 }
 
 /* --- SECTIONS --- */
@@ -1417,21 +1395,41 @@ img {
     display: flex;
   }
 
+  .hero {
+    min-height: 100svh;
+    justify-content: center;
+  }
+
   .hero-content {
-    padding: 120px 24px 40px;
+    padding: 80px 20px 32px;
   }
 
-  .hero-stats {
+  .hero-title {
+    margin-bottom: 16px;
+  }
+
+  .hero-subtitle {
+    margin-bottom: 24px;
+    font-size: 1rem;
+  }
+
+  .hero-actions {
     flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    padding: 20px 24px;
-    margin: 0 16px;
+    gap: 10px;
   }
 
-  .stat-divider {
+  .hero-actions .btn {
+    justify-content: center;
     width: 100%;
-    height: 1px;
+    padding: 16px 32px;
+  }
+
+  .hero-location {
+    margin-top: 16px;
+    width: 100%;
+    justify-content: center;
+    font-size: 0.85rem;
+    padding: 14px 16px;
   }
 
   .hero-scroll {

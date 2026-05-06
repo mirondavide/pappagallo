@@ -225,32 +225,6 @@
   <!-- MENU -->
   <section id="menu" class="section">
     <div class="container">
-      <div class="section-header center">
-        <span class="section-tag">// il nostro menu</span>
-        <h2 class="section-title">Il Menu <span class="accent">Completo</span></h2>
-        <p class="section-desc">Oltre 80 variet&agrave; di pizza, tutte cotte nel forno a legna</p>
-      </div>
-
-      <!-- MENU SEARCH -->
-      <div class="menu-search-wrapper">
-        <div class="menu-search">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          <input type="text" id="menu-search" placeholder="Cerca una pizza..." autocomplete="off">
-        </div>
-      </div>
-
-      <!-- MENU TABS -->
-      <div class="menu-tabs">
-        <button class="menu-tab active" data-tab="pizze">Pizze</button>
-        <button class="menu-tab" data-tab="kebab-pizza">Pizze Kebab</button>
-        <button class="menu-tab" data-tab="famiglia">Famiglia</button>
-        <button class="menu-tab" data-tab="focacce">Focacce</button>
-        <button class="menu-tab" data-tab="panini">Panini</button>
-        <button class="menu-tab" data-tab="kebab">Kebab & Piadine</button>
-        <button class="menu-tab" data-tab="fritture">Fritture</button>
-        <button class="menu-tab" data-tab="tacos">Tacos</button>
-        <button class="menu-tab" data-tab="bibite">Bibite</button>
-      </div>
 
       <!-- FARINE SPECIALI NOTICE -->
       <div class="menu-notice">
@@ -259,7 +233,8 @@
       </div>
 
       <!-- PIZZE CLASSICHE -->
-      <div class="menu-panel active" data-panel="pizze">
+      <h3 class="menu-category-title">Pizze Classiche e Speciali</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Atalanta</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, branzi DOP, porcini, speck Alto Adige, grana Padano DOP</p></div>
           <div class="menu-item"><div class="item-header"><h4>Babbo Natale</h4><span class="item-price">&euro; 6,50</span></div><p>Mozzarella di bufala campana DOP, carciofi, rucola, pomodoro fresco</p></div>
@@ -357,7 +332,8 @@
       </div>
 
       <!-- PIZZE KEBAB -->
-      <div class="menu-panel" data-panel="kebab-pizza">
+      <h3 class="menu-category-title">Pizze Kebab</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Calzone Hasnaa</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, carne kebab, scamorza affumicata, salame piccante</p></div>
           <div class="menu-item"><div class="item-header"><h4>Sami</h4><span class="item-price">&euro; 7,00</span></div><p>Pomodoro, mozzarella, carne kebab, peperoni grigliati, olive</p></div>
@@ -367,7 +343,8 @@
       </div>
 
       <!-- PIZZE FAMIGLIA -->
-      <div class="menu-panel" data-panel="famiglia">
+      <h3 class="menu-category-title">Pizze Famiglia</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Margherita Famiglia</h4><span class="item-price">&euro; 14,00</span></div><p>La classica margherita in formato famiglia</p></div>
           <div class="menu-item"><div class="item-header"><h4>Farcita Famiglia</h4><span class="item-price">&euro; 17,00</span></div><p>Pizza famiglia farcita a scelta</p></div>
@@ -376,7 +353,8 @@
       </div>
 
       <!-- FOCACCE -->
-      <div class="menu-panel" data-panel="focacce">
+      <h3 class="menu-category-title">Focacce</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Focaccia</h4><span class="item-price">&euro; 3,00</span></div><p>Olio d'oliva, sale, origano</p></div>
           <div class="menu-item"><div class="item-header"><h4>Focaccia Primavera</h4><span class="item-price">&euro; 5,00</span></div><p>Bufala campana DOP, pomodori freschi, rucola, grana Padano DOP, farcitura a fine cottura</p></div>
@@ -385,8 +363,9 @@
         </div>
       </div>
 
-      <!-- PANINI -->
-      <div class="menu-panel" data-panel="panini">
+      <!-- PANINI E PANZEROTTI -->
+      <h3 class="menu-category-title">Panini e Panzerotti</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Panino 1</h4><span class="item-price">&euro; 4,50</span></div><p>Lattuga, pomodoro, bufala campana DOP, crudo di Parma 18 mesi</p></div>
           <div class="menu-item"><div class="item-header"><h4>Panino 2</h4><span class="item-price">&euro; 4,50</span></div><p>Lattuga, pomodoro, tonno, olive, cipolla rossa, acciughe</p></div>
@@ -397,7 +376,8 @@
       </div>
 
       <!-- KEBAB & PIADINE -->
-      <div class="menu-panel" data-panel="kebab">
+      <h3 class="menu-category-title">Kebab e Piadine</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Piatto Kebab</h4><span class="item-price">&euro; 6,50</span></div><p>Carne di vitello, tacchino, insalata, patatine, pomodoro, salsa piccante, salsa yogurt, salsa rosa, cipolle</p></div>
           <div class="menu-item"><div class="item-header"><h4>Panino Kebab</h4><span class="item-price">&euro; 5,00</span></div><p>Pane della pizza, carne di vitello, tacchino, insalata, patatine, pomodoro, salsa piccante, salsa yogurt, salsa rosa, cipolle</p></div>
@@ -414,7 +394,8 @@
       </div>
 
       <!-- FRITTURE -->
-      <div class="menu-panel" data-panel="fritture">
+      <h3 class="menu-category-title">Fritture</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Chele di Granchio</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
           <div class="menu-item"><div class="item-header"><h4>Mozzarelline</h4><span class="item-price">&euro; 4,00</span></div><p>10 pezzi</p></div>
@@ -430,7 +411,8 @@
       </div>
 
       <!-- TACOS -->
-      <div class="menu-panel" data-panel="tacos">
+      <h3 class="menu-category-title">Tacos</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Tacos Italiano <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 5,00</span></div><p>Prosciutto DOP, mozzarella, salsa a scelta &mdash; Men&ugrave; &euro;7,00</p></div>
           <div class="menu-item"><div class="item-header"><h4>Tacos Kebab <span class="item-badge new">NOVIT&Agrave;</span></h4><span class="item-price">&euro; 6,00</span></div><p>Kebab, patatine, mozzarella, salsa a scelta &mdash; Men&ugrave; &euro;7,50</p></div>
@@ -440,7 +422,8 @@
       </div>
 
       <!-- BIBITE -->
-      <div class="menu-panel" data-panel="bibite">
+      <h3 class="menu-category-title">Bibite</h3>
+      <div class="menu-panel active">
         <div class="menu-grid">
           <div class="menu-item"><div class="item-header"><h4>Lattina 33cl</h4><span class="item-price">&euro; 1,50</span></div><p>Coca-Cola, Fanta, Sprite e altre</p></div>
           <div class="menu-item"><div class="item-header"><h4>Bottiglia 1,5lt</h4><span class="item-price">&euro; 3,00</span></div><p>Bibite in bottiglia grande</p></div>
@@ -448,11 +431,6 @@
         </div>
       </div>
 
-      <!-- NO RESULTS -->
-      <div class="menu-no-results" id="menu-no-results" style="display:none;">
-        <span class="no-results-icon">🔍</span>
-        <p>Nessun risultato per "<span id="search-query"></span>"</p>
-      </div>
     </div>
   </section>
 

@@ -41,48 +41,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ---- MENU TABS ----
+  // ---- MENU TABS & SEARCH ----
   const menuTabs = document.querySelectorAll('.menu-tab');
   const menuPanels = document.querySelectorAll('.menu-panel');
   const searchInput = document.getElementById('menu-search');
-
-  menuTabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      searchInput.value = '';
-      clearSearch();
-
-      menuTabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-
-      const targetPanel = tab.dataset.tab;
-      menuPanels.forEach(panel => {
-        panel.classList.toggle('active', panel.dataset.panel === targetPanel);
-      });
-    });
-  });
-
-  // ---- MENU SEARCH ----
   const noResults = document.getElementById('menu-no-results');
   const searchQuerySpan = document.getElementById('search-query');
 
-  searchInput.addEventListener('input', () => {
-    const query = searchInput.value.toLowerCase().trim();
-    if (!query) { clearSearch(); return; }
+  if (searchInput) {
+    menuTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearch();
 
-    let anyFound = false;
-    menuPanels.forEach(panel => {
-      panel.classList.add('active');
-      panel.querySelectorAll('.menu-item').forEach(item => {
-        const match = item.textContent.toLowerCase().includes(query);
-        item.classList.toggle('hidden-by-search', !match);
-        if (match) anyFound = true;
+        menuTabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const targetPanel = tab.dataset.tab;
+        menuPanels.forEach(panel => {
+          panel.classList.toggle('active', panel.dataset.panel === targetPanel);
+        });
       });
     });
 
-    menuTabs.forEach(t => t.classList.remove('active'));
-    noResults.style.display = anyFound ? 'none' : 'block';
-    if (!anyFound) searchQuerySpan.textContent = searchInput.value;
-  });
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase().trim();
+      if (!query) { clearSearch(); return; }
+
+      let anyFound = false;
+      menuPanels.forEach(panel => {
+        panel.classList.add('active');
+        panel.querySelectorAll('.menu-item').forEach(item => {
+          const match = item.textContent.toLowerCase().includes(query);
+          item.classList.toggle('hidden-by-search', !match);
+          if (match) anyFound = true;
+        });
+      });
+
+      menuTabs.forEach(t => t.classList.remove('active'));
+      if (noResults) noResults.style.display = anyFound ? 'none' : 'block';
+      if (!anyFound && searchQuerySpan) searchQuerySpan.textContent = searchInput.value;
+    });
+  }
 
   function clearSearch() {
     document.querySelectorAll('.menu-item.hidden-by-search').forEach(item => item.classList.remove('hidden-by-search'));
@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (activeTab) {
       const targetPanel = activeTab.dataset.tab;
       menuPanels.forEach(panel => panel.classList.toggle('active', panel.dataset.panel === targetPanel));
-    } else {
+    } else if (menuTabs.length) {
       menuTabs[0].classList.add('active');
       menuPanels.forEach((panel, i) => panel.classList.toggle('active', i === 0));
     }
-    noResults.style.display = 'none';
+    if (noResults) noResults.style.display = 'none';
   }
 
   // ---- SMOOTH SCROLL ----
@@ -128,4 +128,76 @@ document.addEventListener('DOMContentLoaded', () => {
   if (marqueeTrack && marqueeContent) {
     marqueeTrack.appendChild(marqueeContent.cloneNode(true));
   }
+
+  // ---- COOKIE CONSENT ----
+  const MAPS_SRC = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.5!2d9.6545!3d45.6455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781530ed5e6c40f%3A0x2e68b7a1d7b4f5e!2sPizzeria%20Pappagallo!5e0!3m2!1sen!2sit!4v1';
+  const cookieBanner = document.getElementById('cookie-banner');
+  const cookieModal = document.getElementById('cookie-modal');
+
+  function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? match[2] : null;
+  }
+
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + days * 86400000);
+    document.cookie = name + '=' + value + ';expires=' + d.toUTCString() + ';path=/;SameSite=Lax';
+  }
+
+  function loadMap() {
+    const wrapper = document.getElementById('map-wrapper');
+    const placeholder = document.getElementById('map-placeholder');
+    if (placeholder) {
+      const iframe = document.createElement('iframe');
+      iframe.src = MAPS_SRC;
+      iframe.width = '100%';
+      iframe.height = '400';
+      iframe.style.cssText = 'border:0; border-radius: 16px;';
+      iframe.allowFullscreen = true;
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      wrapper.replaceChild(iframe, placeholder);
+    }
+  }
+
+  function acceptCookies() {
+    setCookie('cookie_consent', 'all', 365);
+    cookieBanner.style.display = 'none';
+    loadMap();
+  }
+
+  function rejectCookies() {
+    setCookie('cookie_consent', 'necessary', 365);
+    cookieBanner.style.display = 'none';
+  }
+
+  // Show banner or load map based on stored preference
+  const consent = getCookie('cookie_consent');
+  if (!consent) {
+    cookieBanner.style.display = 'block';
+  } else if (consent === 'all') {
+    loadMap();
+  }
+
+  document.getElementById('cookie-accept').addEventListener('click', acceptCookies);
+  document.getElementById('cookie-reject').addEventListener('click', rejectCookies);
+
+  // Map placeholder accept button
+  document.getElementById('accept-maps').addEventListener('click', acceptCookies);
+
+  // Cookie policy modal
+  function openCookieModal(e) {
+    e.preventDefault();
+    cookieModal.style.display = 'flex';
+  }
+
+  document.getElementById('cookie-policy-link').addEventListener('click', openCookieModal);
+  document.getElementById('cookie-settings-link').addEventListener('click', openCookieModal);
+  document.getElementById('cookie-modal-close').addEventListener('click', () => {
+    cookieModal.style.display = 'none';
+  });
+  cookieModal.addEventListener('click', (e) => {
+    if (e.target === cookieModal) cookieModal.style.display = 'none';
+  });
 });

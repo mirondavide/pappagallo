@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizzeria Pappagallo | Stezzano (BG) - Pizza al Forno a Legna</title>
   <meta name="description" content="Pizzeria Pappagallo - Pizzeria e Kebab d'asporto a Stezzano. Pizza cotta nel forno a legna, kebab, focacce, panini e tanto altro. Consegna a domicilio gratuita.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -470,11 +468,12 @@
       </div>
 
       <!-- MAP -->
-      <div class="map-wrapper">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2788.5!2d9.6545!3d45.6455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4781530ed5e6c40f%3A0x2e68b7a1d7b4f5e!2sPizzeria%20Pappagallo!5e0!3m2!1sen!2sit!4v1"
-          width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <div class="map-wrapper" id="map-wrapper">
+        <div id="map-placeholder" class="map-placeholder">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p>Per visualizzare la mappa, accetta i cookie di Google Maps.</p>
+          <button id="accept-maps" class="map-accept-btn">Accetta e mostra mappa</button>
+        </div>
       </div>
     </div>
   </section>
@@ -504,6 +503,7 @@
       </div>
       <div class="footer-bottom">
         <p>&copy; 2025 Pizzeria Pappagallo &mdash; Via Bergamo, 12 &mdash; Stezzano (BG)</p>
+        <p class="footer-cookie-link"><a href="#" id="cookie-settings-link">Cookie Policy</a></p>
       </div>
     </div>
   </footer>
@@ -512,6 +512,32 @@
   <a href="tel:035593083" class="whatsapp-float" aria-label="Chiama">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
   </a>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner" class="cookie-banner" style="display:none;">
+    <div class="cookie-banner-inner">
+      <p>Questo sito utilizza cookie tecnici e servizi di terze parti (Google Maps) per offrirti la migliore esperienza. <a href="#" id="cookie-policy-link">Cookie Policy</a></p>
+      <div class="cookie-banner-actions">
+        <button id="cookie-reject" class="cookie-btn cookie-btn-reject">Solo necessari</button>
+        <button id="cookie-accept" class="cookie-btn cookie-btn-accept">Accetta tutti</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- COOKIE POLICY MODAL -->
+  <div id="cookie-modal" class="cookie-modal" style="display:none;">
+    <div class="cookie-modal-content">
+      <button id="cookie-modal-close" class="cookie-modal-close">&times;</button>
+      <h2>Cookie Policy</h2>
+      <p><strong>Titolare:</strong> Pizzeria Pappagallo &mdash; Via Bergamo, 12 &mdash; 24040 Stezzano (BG)</p>
+      <h3>Cookie tecnici (necessari)</h3>
+      <p>Utilizziamo un cookie tecnico (<code>cookie_consent</code>) per ricordare la tua preferenza sui cookie. Non raccoglie dati personali e ha durata 365 giorni.</p>
+      <h3>Servizi di terze parti</h3>
+      <p><strong>Google Maps:</strong> Se accetti, viene caricata una mappa interattiva tramite iframe di Google. Google potrebbe impostare cookie propri per analytics e preferenze. <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy Policy di Google</a>.</p>
+      <h3>I tuoi diritti</h3>
+      <p>Puoi modificare le tue preferenze in qualsiasi momento cliccando su &ldquo;Cookie Policy&rdquo; nel footer del sito. Ai sensi del GDPR (Reg. UE 2016/679) e del D.Lgs. 196/2003, hai diritto di accesso, rettifica e cancellazione dei tuoi dati.</p>
+    </div>
+  </div>
 
   <!-- SCRIPTS -->
   <script src="main.js"></script>
